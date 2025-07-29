@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basilica di Santa Maria di Collemaggio</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      line-height: 1.7;
+      background: linear-gradient(135deg, blue, green, yellow, red);
+      background-size: 400% 400%;
+      animation: gradientShift 15s ease infinite;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.85);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 26px;
+      margin-bottom: 20px;
+      color: #000;
+    }
+
+    p {
+      font-size: 18px;
+      text-align: justify;
+      color: #000;
+    }
+
+    .image-row {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+      flex-wrap: wrap;
+    }
+
+    .image-row img {
+      max-width: 100%;
+      width: 48%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 30px;
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      font-size: 16px;
+      text-align: center;
+      border-radius: 5px;
+      padding: 8px 16px;
+      background-color: rgba(255, 255, 255, 0.6);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .back-link:hover {
+      background-color: #fff;
+      color: #0056b3;
+    }
+
+    @media (max-width: 600px) {
+      .image-row img {
+        width: 100%;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      h1 {
+        font-size: 22px;
+      }
+
+      .back-link {
+        font-size: 14px;
+        padding: 6px 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Basilica di Santa Maria di Collemaggio</h1>
+
+    <p>
+      La basilica di Santa Maria di Collemaggio è un edificio religioso dell'Aquila. Fondata nel 1288 per volere di Pietro da Morrone,
+      qui incoronato papa con il nome di Celestino V il 29 agosto 1294. È considerata la massima espressione dell'architettura abruzzese,
+      oltre che il simbolo della città, ed è stata dichiarata monumento nazionale nel 1902. Dal 1327 ospita le spoglie del pontefice,
+      attualmente conservate all'interno del mausoleo di Celestino V, realizzato nel 1517 da Girolamo da Vicenza.
+      È sede di un giubileo annuale, il primo della storia, istituito con la Bolla del Perdono del 29 settembre 1294,
+      oggi noto con il nome di Perdonanza Celestiniana e inserito dall'UNESCO tra i patrimoni orali e immateriali dell'umanità;
+      pertanto, è caratterizzata dalla presenza di una Porta Santa sulla facciata laterale.
+    </p>
+
+    <div class="image-row">
+      <img src="collemaggio.jpg" alt="Basilica di Collemaggio - Facciata">
+      <img src="collemaggio1.jpg" alt="Basilica di Collemaggio - Interno o dettaglio">
+    </div>
+
+    <a href="Index.html" class="back-link">&larr; Torna alla pagina iniziale</a>
+  </div>
+  
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Giornata 30 Luglio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+      margin: 0;
+      color: #000;
+      background: linear-gradient(135deg, blue, green, yellow, red);
+      background-size: 400% 400%;
+      animation: gradientMove 15s ease infinite;
+    }
+
+    @keyframes gradientMove {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .btn-container {
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      background-color: rgba(255, 255, 255, 0.95);
+      color: #000;
+      padding: 12px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: white;
+      color: #0056b3;
+    }
+
+    h1 {
+      font-size: 28px;
+      color: #000;
+      margin: 20px auto 30px;
+      max-width: 800px;
+      padding: 0 10px;
+      line-height: 1.5;
+    }
+
+    iframe {
+      width: 100%;
+      max-width: 800px;
+      height: 500px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 600px) {
+      .btn-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        /* Rimuove eventuale spazio interno */
+      }
+
+      .btn {
+        width: 100%;
+        max-width: 320px;
+        /* Limita la larghezza massima */
+        font-size: 18px;
+        padding: 16px 24px;
+        margin-bottom: 16px;
+        box-sizing: border-box;
+        /* Include padding nella larghezza */
+      }
+
+      h1 {
+        font-size: 20px;
+        padding: 0 15px;
+      }
+
+      iframe {
+        height: 400px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="btn-container">
+    <a href="Attivita.html" class="btn">Programma del giorno</a>
+    <a href="Liturgia.html" class="btn">Libretti</a>
+    <a href="Storia_1.html" class="btn">Storia dell'Antica Cattedrale di San Massimo</a>
+    <a href="Storia_2.html" class="btn">Storia della Basilica di Santa Maria di Collemaggio</a>
+  </div>
+
+  <h1>
+    Percorso del Pellegrinaggio: Partenza presso Antica Cattedrale di San Massimo in Civita di Bagno<br>
+    e arrivo presso la Basilica di Santa Maria di Collemaggio
+  </h1>
+
+  <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1giAkxUg8PfsH0_8i9j2Npqn90gb5Bjk&ehbc=2E312F&noprof=1">
+  </iframe>
+
+  <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1b543LVtk1kIuhSiMXQHisqZ8DCrANZo&ehbc=2E312F" width="640"
+    height="480">
+  </iframe>
+
+</body>
+
+</html>
